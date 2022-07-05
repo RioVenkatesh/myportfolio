@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/RioVenkatesh/myportfolio/issues"
   },
-  "homepage": "https://github.com/RioVenkatesh/myportfolio#readme",
+  "homepage": "https://github.com/RioVenkatesh/myportfolio",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.1",
     "parcel": "^2.0.1",
