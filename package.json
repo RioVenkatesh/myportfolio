@@ -5,11 +5,8 @@
   "description": "A clean, beautiful and responsive portfolio",
   "source": "src/index.html",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "parcel",
-    "build": "parcel build",
-    "custom-deploy": "node pages.js"
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
