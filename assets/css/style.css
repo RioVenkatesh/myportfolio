@@ -56,7 +56,7 @@
   --color-heading: #ffffff;
   --color-heading-wv: #1e2125;
   --color-body: #878e99;
-  --color-body-white: #3c3e41;
+  --color-body-white: #222222;
   --color-lightn: #c4cfde;
   --color-midgray: #878787;
   --color-light: #E4E6EA;
@@ -126,7 +126,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--font-primary);
   color: var(--color-body);
-  font-weight: var(--p-regular); }
+  font-weight: var(--p-regular);
+ }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     body {
       overflow: hidden; } }
@@ -4390,10 +4391,25 @@ Background Image
   background-position: center center; }
 
 .bg_image--1 {
-  background-image: url(../images/bg/bg-image-1.jpg); }
+  background-image: url(../images/bg/bg-image-1.jpg);
+    animation: image-move 30s ease infinite;
+}
 
+@keyframes image-move{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} 
 .bg_image--2 {
-  background-image: url(../images/bg/bg-image-2.jpg); }
+  background-image: url(../images/bg/bg-image-2.jpg);
+  animation: image-move 30s ease infinite;
+}
 
 .bg_image--3 {
   background-image: url(../images/bg/bg-image-3.jpg); }
@@ -9844,7 +9860,7 @@ figcaption {
   left: 50%;
   height: 100%;
   width: 100%;
-  background: linear-gradient(60deg,#ff5858, #ff0000, #c70000, #800000,#470000, #1d0000, #000000);
+  background: linear-gradient(60deg,white,red,black);
   border-radius: 50%;
   z-index: -1;
   animation: animatedgradient 2s ease alternate infinite;
