@@ -14610,3 +14610,6 @@ body.white-version {
   color: var(--color-white) !important; }
 
 /*# sourceMappingURL=../maps/style.css.map */
+:hover{
+  color:var(--hover-color);
+}
